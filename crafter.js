@@ -7,7 +7,6 @@ const {
 } = require('mineflayer-pathfinder');
 const { Vec3 } = require('vec3');
 const PrismarineItem = require('prismarine-item');
-const { symlinkSync } = require('fs');
 let readyToSleep = true;
 let defaultMove;
 function init(defaultMov, bot, mcData) {
