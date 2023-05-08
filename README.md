@@ -29,4 +29,16 @@ cd minecraft-craft-bot
 ```
 npm install
 ```
-4. Add credentials in craftbot.js
+4. Add credentials in `craftbot.js` and specify what and where to craft in `craftermain.js`:
+```
+ {name: 'gold_block', chest: [964, 65, -34], storeChest: [946, 65, -34], crafting: true},
+ {name: 'iron_block', chest: [967, 65, -34], storeChest: [948, 65, -34], crafting: true}
+```
+| Variable | What they stand for |
+| -----------| ----------------- |
+| `chest`     | Where the materials are |
+| `storeChest` | Where to store them |
+5. Start the bot
+```
+node .\craftbot.js
+```
