@@ -31,13 +31,15 @@ npm install
 ```
 4. Add credentials in `craftbot.js` and specify what and where to craft in `craftermain.js`:
 ```
- {name: 'gold_block', chest: [964, 65, -34], storeChest: [946, 65, -34], crafting: true},
- {name: 'iron_block', chest: [967, 65, -34], storeChest: [948, 65, -34], crafting: true}
+ {name: 'poppy', chest: [23455, 109, -3249994], shulker: [23455, 107, -334], storeChest: [23456, 109, -334], crafting: false},
+ {name: 'iron_block', chest: [23453, 109, -334], shulker: [23453, 107, -334], storeChest: [23454, 109, -334], crafting: true}
 ```
 | Variable | What they stand for |
 | -----------| ----------------- |
 | `chest`     | Where the materials are |
 | `storeChest` | Where to store them |
+| `shulker` | Where to store the crafted items |
+| `crafting` | If the item needs to be crafted |
 5. Start the bot
 ```
 node .\craftbot.js
